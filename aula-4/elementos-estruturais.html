@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - Elementos HTML5 e Box Model</title>
+    <style>
+        body{
+            margin: 0;
+
+
+        }
+        .post{
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav ul{
+           background-color: #c9c3c3
+        }
+        nav li {
+            display: inline-block;
+            margin-right: 80px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        aside {
+            float: right;
+            width: 30%;
+            border: 1px solid black;
+            height: 425;
+            /*position: relative;
+            bottom: 445px;
+            right: 20px;*/
+            padding: 5px;
+            border-radius: 20px;
+        }
+        footer {
+            width: 100%;
+            height: 100px;
+            padding: 20px;
+            border: 1px black solid;
+        }
+        main {
+            width:60%;
+            float: left;
+        }
+        .float-container:after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+        article:first-child{
+            margin-top:0;
+        }
+    </style>
+</head>
+<body>
+    <!--
+
+        EXEMPLO DE SITE DESENVOLVIDO COM ELEMENTOS ESTRUTURAIS DE HTML5
+
+    -->
+
+    <header>
+        <h1>Blog do Jão</h1>
+        <h2>Este texto é só o subtítulo do meu blog, obrigado por ler <del>otário</del>.</h2>
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Sobre</a></li>
+                <li><a>Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class='float-container'>
+    <main style="display:inline-block">
+        <article class="post">
+            <h3>O céu está azul e as estrelas cintilam</h3>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Casamentiss faiz malandris se pirulitá. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Sapien in monti palavris qui num significa nadis i pareci latim.</p>
+            <p>Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Leite de capivaris, leite de mula manquis sem cabeça. Atirei o pau no gatis, per gatis num morreus. Interagi no mé, cursus quis, vehicula ac nisi.</p>
+        </article>
+        <article class="post">
+            <h3>Ele nos contou uma história muito excitante</h3>
+            <p>Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
+            <p>Viva Forevis aptent taciti sociosqu ad litora torquent. Quem num gosta di mé, boa gentis num é. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Diuretics paradis num copo é motivis de denguis.</p>
+        </article>
+    </main>
+    
+    <aside style="display:inline-block">
+        <section>
+                <h4>Esse conteúdo é menos importante</h4>
+                <hr>
+                <ul>
+                    <li>Sopa</li>
+                    <li>De</li>
+                    <li>Macaco</li>
+                </ul>
+        </section>
+        <section>
+                <h4>Este é menos ainda</h4>
+                <hr>
+                <ul>
+                    <li>Pra</li>
+                    <li>Te</li>
+                    <li>En</li>
+                    <li>Lou</li>
+                    <li>Que</li>
+                    <li>Cer</li>
+                </ul>
+        </section>
+        
+    </aside>
+    </div>
+    
+    <footer>
+        Sou o rodapé
+    </footer>
+</body>
+</html>

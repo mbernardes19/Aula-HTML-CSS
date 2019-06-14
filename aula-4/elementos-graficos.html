@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - Elementos HTML5 e Box Model</title>
+    <style>
+        #canvas {
+            margin: 20px;
+            border: 1px solid red;
+        }
+        svg rect {
+            fill:rgb(0,0,255);
+            stroke-width: 10;
+            stroke:rgb(0,0,0);
+        }
+    </style>
+</head>
+<body>
+  <!--
+
+        EXEMPLO DE ELEMENTOS GRÁFICOS HTML5
+
+    -->
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'red';
+        ctx.fillRect(150, 150, 50, 50);
+    </script>
+
+    <svg width="400" height="400">
+        <rect width="400" height="400">
+    </svg>
+</body>
+</html>
