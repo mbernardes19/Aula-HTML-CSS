@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <style>
+        .container{
+            width: 70%;
+            height: 70%;
+            background-color: #e7e7e7;
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .form-input {
+            margin: 15px;
+        }
+
+        input {
+            padding-left: 5px;
+        }
+
+        .col{
+            display: inline-block;
+            vertical-align: top;
+        }
+        #filhosQtd{
+            width: 50px;
+        }
+
+        textarea{
+            display: block;
+            padding-left: 5px;
+        }
+
+        fieldset{
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="col">
+                        <div class="form-input">
+                            <label for="nome">Nome:</label>
+                            <input id="nome" name="nome" type="text">
+                        </div>
+                        <div class="form-input">
+                            <label for="sobrenome">Sobrenome:</label>
+                            <input id="sobrenome" name="sobrenome" type="text">    
+                        </div>
+                        <div class="form-input">
+                            <label for="nascimento">Data de nascimento:</label>
+                            <input id="nascimento" name="nascimento" type="date">    
+                        </div>
+                        <div class="form-input">
+                            <label for="genero">Gênero:</label>
+                            <input type="radio" name="genero" value="M">Masculino  
+                            <input type="radio" name="genero" value="F">Feminino
+                        </div>
+                </div>
+                <div class="col">
+                    <div class="form-input">
+                        <label for="nome">Tem filhos?</label>
+                        <select  name="filhos" id="filhos">
+                            <option>Não</option>
+                            <option>Sim</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label for="filhosQtd">Se sim, quantos?</label>
+                        <input id="filhosQtd" name="filhosQtd" type="number">    
+                    </div>
+                    <div class="form-input">
+                        <label for="cor">Cor favorita?</label>
+                        <input id="cor" name="cor" type="color">    
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <div class="form-input">
+                    <label>Fale um pouco sobre você:</label>
+                    <textarea rows="10" cols="50" placeholder="O que a sua vida vale?"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+            <legend>Informações de contato:</legend>
+                <div class="form-input">
+                    <label>Email:</label>
+                    <input id="email" name="email" type="email">  
+                </div>
+                <div class="form-input">
+                    <label>Celular:</label>
+                    <input id="celular" name="celular" type="tel">  
+                </div>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
